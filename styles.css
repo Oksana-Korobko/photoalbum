@@ -1,0 +1,51 @@
+.wrapper1 {
+    display: grid;
+    margin: 10px;
+    width: 640px;
+    height: 460px;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'photo1 photo2 photo3'
+    'photo1 photo4 photo4'
+    'photo5 photo4 photo4'
+    ;
+}
+.wrapper2 {
+    display: grid;
+    margin: 10px;
+    width: 640px;
+    height: 460px;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'photo1 photo2 photo3'
+    'photo4 photo4 photo3'
+    'photo4 photo4 photo5'
+    ;
+}
+.wrapper1>div {
+    border-radius: 5px;
+    
+    min-height: 50px;
+}
+.photo1 {
+    background-color: darkorchid;
+    grid-area: photo1;
+}
+.photo2 {
+    background-color: salmon;
+    grid-area: photo2;
+}
+.photo3 {
+    background-color: khaki;
+    grid-area: photo3;
+}
+.photo4 {
+    background-color: steelblue;
+    grid-area: photo4;
+}
+.photo5 {
+    background-color: darkturquoise;
+    grid-area: photo5;
+}
